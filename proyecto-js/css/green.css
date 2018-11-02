@@ -1,0 +1,16 @@
+body{
+	background: url('../img/bricks.jpg');
+	background-attachment: fixed;
+}
+
+#logo{
+	background-color: #235e3d;
+}
+
+#menu ul li:hover{
+	background-color: #235e3d;
+}
+
+.button_more{
+	background-color: #235e3d;
+}

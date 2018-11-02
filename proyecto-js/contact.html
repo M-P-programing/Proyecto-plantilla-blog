@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto con Javascript</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+	<!-- jQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.min.css">
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
+</head>
+<body>
+	<div id="selector_theme">
+		<div id="toGreen"></div>
+		<div id="toRed"></div>
+		<div id="toBlue"></div>
+	</div>
+	<section id="global">
+
+		<!-- Cabecera -->
+
+		<header>
+			<div id="logo">
+				<h1>Proyecto Js</h1>
+			</div>
+			<div class="clearfix"></div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre Mi</a></li>
+					<li><a href="reloj.html">Reloj</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<!-- Contenido-->
+
+		<section id="content">
+			<div id="box">
+				<!-- Cargando formulario -->
+				<h2>Contacto</h2>
+				<form id="form_contact" action="#" method="post">
+					<label for="name">Nombre</label>
+					<input data-validation="alphanumeric" type="text" name="name" data-validation="required">
+					<label for="surname">Apellidos</label>
+					<input data-validation="alphanumeric" type="text" name="surname" data-validation="required">
+					<label for="email">Email</label>
+					<input data-validation="email" type="email" name="email" data-validation="required">
+					<label for="sex">Sexo</label>
+					<select name="sex">
+						<option value="men">Hombre</option>
+						<option value="women">Mujer</option>
+					</select>
+					<label for="date">Fecha de Nascimiento</label>
+					<input data-validation="date" data-validation-format="dd-mm-yyyy" type="text" name="date">
+					<label for="years">Edad</label>
+					<input data-validation="number" type="number" name="years">
+					<input type="submit" name="submit" value="Enviar">
+				</form>
+			</div>
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>Quien soy...</span></h4>
+					<img src="img/diamond.jpg">
+					<p>Pretium rutrum quisque curae aliquam tristique netus auctor imperdiet congue, scelerisque magnis hac fringilla nibh dapibus sollicitudin nunc, laoreet curabitur</p>
+				</div>
+				<div id="login">
+					<h4>Identificate</h4>
+					<form>
+						<label for="name">Nombre</label>
+						<input type="text" name="nombre" id="form_name">
+						<label for="email">Email</label>
+						<input type="email" name="email">
+						<label for="password">Password</label>
+						<input type="text" name="password">
+						<input type="submit" name="submit">
+					</form>
+				</div>
+			</aside>
+			<div class="clearfix"></div>
+		</section>
+	</section>
+	<footer>
+		Marco Perrullo
+		<a href="#" class="subir">^^<br></a>
+	</footer>
+
+</body>
+</html>

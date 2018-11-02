@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto con Javascript</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+	<!-- jQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.min.css">
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+	<!-- Scripts -->
+
+	<script type="text/javascript" src="js/about.js"></script>
+</head>
+<body>
+	<div id="selector_theme">
+		<div id="toGreen"></div>
+		<div id="toRed"></div>
+		<div id="toBlue"></div>
+	</div>
+	<section id="global">
+
+		<!-- Cabecera -->
+
+		<header>
+			<div id="logo">
+				<h1>Proyecto Js</h1>
+			</div>
+			<div class="clearfix"></div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre Mi</a></li>
+					<li><a href="reloj.html">Reloj</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<!-- Contenido-->
+
+		<section id="content">
+			<div id="box">
+				<!-- Cargando acordeon -->
+				<h2>Sobre mi</h2>
+				<div id="acordeon">
+					<h3>Quienes somos</h3>
+					<p>Pretium rutrum quisque curae aliquam tristique netus auctor imperdiet congue, scelerisque magnis hac fringilla nibh dapibus sollicitudin nunc, laoreet curabitur</p>
+					<h3>Que hacemos</h3>
+					<p>Pretium rutrum quisque curae aliquam tristique netus auctor imperdiet congue, scelerisque magnis hac fringilla nibh dapibus sollicitudin nunc, laoreet curabitur</p>
+					<h3>Nuestros reviews</h3>
+					<p>Pretium rutrum quisque curae aliquam tristique netus auctor imperdiet congue, scelerisque magnis hac fringilla nibh dapibus sollicitudin nunc, laoreet curabitur</p>
+				</div>
+			</div>
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>Quien soy...</span></h4>
+					<img src="img/diamond.jpg">
+					<p>Pretium rutrum quisque curae aliquam tristique netus auctor imperdiet congue, scelerisque magnis hac fringilla nibh dapibus sollicitudin nunc, laoreet curabitur</p>
+				</div>
+				<div id="login">
+					<h4>Identificate</h4>
+					<form>
+						<label for="name">Nombre</label>
+						<input type="text" name="nombre" id="form_name">
+						<label for="email">Email</label>
+						<input type="email" name="email">
+						<label for="password">Password</label>
+						<input type="text" name="password">
+						<input type="submit" name="submit">
+					</form>
+				</div>
+			</aside>
+			<div class="clearfix"></div>
+		</section>
+	</section>
+	<footer>
+		Marco Perrullo
+		<a href="#" class="subir">^^<br></a>
+	</footer>
+
+</body>
+</html>
